@@ -1,0 +1,56 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100px;
+  max-width: 320px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  animation: show 0.5s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text {
+  font-family: 'Circe';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--black-text);
+  margin-bottom: 20px;
+}
+
+.buttongroup {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    min-height: 100px;
+    max-width: 540px;
+    padding: 40px;
+    border-radius: 20px;
+  }
+}

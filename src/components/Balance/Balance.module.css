@@ -1,0 +1,53 @@
+.Balance {
+  height: 80px;
+  background-color: var(--white-text);
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+
+.BalanceName {
+  color: var(--balance-grey);
+  font-family: 'Circe', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  padding-top: 8px;
+}
+
+.BalanceValue {
+  color: var(--black-text);
+  font-family: 'Segoeui', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.BalanceText {
+  margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .Balance {
+    height: 80px;
+    margin-left: 0px;
+    padding-left: 40px;
+    margin-bottom: 0px;
+    /* margin-top: 44px; */
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .Balance {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    height: 80px;
+  }
+}

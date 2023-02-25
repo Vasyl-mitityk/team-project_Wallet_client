@@ -1,0 +1,36 @@
+.chartContainer {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.chartText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1px 20px;
+  font-family: 'Segoeui', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 700;
+}
+.currency {
+  margin-right: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .chartContainer {
+    width: 320px;
+    margin-right: 34px;
+    margin-bottom: 0;
+  }
+
+  .chartText {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .chartContainer {
+    margin-right: 30px;
+  }
+}

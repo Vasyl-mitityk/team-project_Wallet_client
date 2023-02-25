@@ -1,0 +1,72 @@
+.switchfor {
+  position: relative;
+  cursor: pointer;
+}
+
+.switchbox {
+  display: flex;
+
+  margin-bottom: 40px;
+  width: 100%;
+  margin-right: -40px;
+}
+
+.switch {
+  display: none;
+}
+
+.switchfor::after {
+  content: '';
+  width: 80px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 30px;
+
+  box-shadow: 0 0 1px 1px #e0e0e0;
+  position: absolute;
+  top: 0px;
+  left: -40px;
+}
+
+.switchfor::before {
+  left: -2px;
+  top: -1px;
+  background-color: var(--pink-text);
+
+  box-shadow: 1px 1px 10px -1px var(--pink-text);
+
+  content: '';
+  width: 44px;
+  height: 44px;
+  background-image: url('../ModalAddTransaction/minusbtn.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 35%;
+  background-size: 80px 80px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  transition: all 200ms ease;
+}
+
+.switch:checked + .switchfor::before {
+  content: '';
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--green-text);
+  box-shadow: 1px 1px 10px -1px #29b697;
+  background-image: url('../ModalAddTransaction/plusbtn.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 35%;
+  background-size: 80px 80px;
+
+  border-radius: 50%;
+  position: absolute;
+
+  top: -1px;
+  left: -40px;
+  z-index: 1;
+  transition: all 200ms ease;
+}
